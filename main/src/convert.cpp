@@ -4,11 +4,23 @@
 #include <math.h>
 #include <sstream>
 #include <cstring> 
-#include "convert.h"
+#include "../inc/convert.h"
 #include <stdint.h>
 #include <sstream>
 #include <iomanip>
+#include <errno.h>
+#include <cstdlib>
 using namespace std;
+
+void hexadecimalToUint8Array(const string& hex, unsigned char * bytes) {
+  int k = 0;
+  for (unsigned int i = 0; i < hex.length(); i += 2) {
+    string byteString = hex.substr(i, 2);
+    uint8_t byte = (uint8_t) strtol(byteString.c_str(), NULL, 16);
+    bytes[k] = byte;
+    k+=1;
+  }
+}
 
 string uint8_to_hex_string(const uint8_t *v, const size_t s) {
   stringstream ss;
@@ -21,24 +33,6 @@ string uint8_to_hex_string(const uint8_t *v, const size_t s) {
 
   return ss.str();
 }
-
-/*unsigned char**/ void hexadecimalToUint8Array(const string& hex, unsigned char * bytes) {
-  //unsigned char* bytes = (unsigned char*)malloc(hex.length()/2);
-  int k = 0;
-  for (unsigned int i = 0; i < hex.length(); i += 2) {
-    string byteString = hex.substr(i, 2);
-    uint8_t byte = (uint8_t) strtol(byteString.c_str(), NULL, 16);
-    bytes[k] = byte;
-    k+=1;
-  }
-  //return bytes;
-}
-
-void freebuffer(unsigned char* buffer) {
-	free(buffer);
-
-}
-
 
 /*
 string hexadecimalToBinaryString(string hex) {
@@ -69,29 +63,7 @@ string hexadecimalToBinaryString(string hex) {
 	return byte;
 }*/
 
-string uint8ArrayToHexadecimal(const unsigned char* vec, int dlina) {
-	vector<uint8_t> v;
-	for (int i = 0; i<dlina; i++){
-		v.push_back((int)vec[i]);
-	}
-    stringstream ss;
 
-    vector<uint8_t>::const_iterator it;
-
-    for (it = v.begin(); it != v.end(); it++) {
-        char hex_char[2];
-        char p;
-        sprintf(hex_char, "%x", *it);
-        if (strlen(hex_char)<2) {
-        	p=hex_char[0];
-        	hex_char[0]='0';
-        	hex_char[1]=p;
-        }
-        ss << hex_char;
-    }
-
-    return ss.str();
-}
 /*
 string uint8ArrayToBinaryString(vector<uint8_t> vec) {
 	return hexadecimalToBinaryString(uint8ArrayToHexadecimal(vec));
@@ -155,11 +127,3 @@ string string_to_hex(const string& input)
     return output;
 }
 
-
-/*
-int main() {
-	unsigned char s[32] = {103, 71, 24, 23, 139, 217, 125, 58, 197, 149, 61, 13, 142, 86, 73, 234, 55, 60, 77, 152, 179, 182, 27, 239, 213, 105, 152, 0, 234, 168, 81, 59};
-	string var = uint8ArrayToHexadecimal(s);
-	cout<<var<<endl;
-
-}*/

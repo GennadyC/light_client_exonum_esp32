@@ -295,7 +295,7 @@ Discarded input sections
  .literal.rtc_clk_cpu_freq_to_xtal
                 0x0000000000000000       0x30 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_to_pll
-                0x0000000000000000       0x30 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0x38 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .literal.rtc_clk_cpu_freq_set_fast
                 0x0000000000000000       0x14 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text          0x0000000000000000        0x0 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
@@ -314,7 +314,7 @@ Discarded input sections
  .text.rtc_clk_cpu_freq_to_xtal
                 0x0000000000000000       0x6f /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_cpu_freq_to_pll
-                0x0000000000000000       0xc5 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000000000000       0xd1 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_cpu_freq_set_fast
                 0x0000000000000000       0x38 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .xt.lit        0x0000000000000000       0xd8 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
@@ -718,7 +718,7 @@ END GROUP
  *(.gnu.version)
                 0x000000004007a3d8                _loader_text_end = ABSOLUTE (.)
 
-.iram.text      0x0000000040080000     0x176e
+.iram.text      0x0000000040080000     0x1776
                 0x0000000040080000                . = ALIGN (0x10)
  *(.entry.text)
  *(.init.literal)
@@ -808,25 +808,25 @@ END GROUP
                 0x0000000040080230        0x0 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x4 (size before relaxing)
  .literal.rtc_clk_bbpll_set
-                0x0000000040080230        0xc /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                                         0x30 (size before relaxing)
+                0x0000000040080230       0x10 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                                         0x38 (size before relaxing)
  .literal.rtc_clk_xtal_freq_get
-                0x000000004008023c        0x8 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080240        0x8 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x1c (size before relaxing)
  .literal.rtc_clk_cpu_freq_get
-                0x0000000040080244       0x14 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080248       0x14 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x28 (size before relaxing)
  .literal.rtc_clk_cpu_freq_value
-                0x0000000040080258       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004008025c       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x2c (size before relaxing)
  .literal.rtc_clk_xtal_freq_update
-                0x0000000040080278        0x0 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004008027c        0x0 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_apb_freq_update
-                0x0000000040080278        0x4 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004008027c        0x4 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                           0x8 (size before relaxing)
  .literal.rtc_clk_cpu_freq_set
-                0x000000004008027c       0x24 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040080280       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x78 (size before relaxing)
  .literal.rtc_clk_apb_freq_get
                 0x00000000400802a0        0x8 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
@@ -946,90 +946,90 @@ END GROUP
                 0x0000000040080f0c       0x10 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                 0x0000000040080f0c                rtc_clk_fast_freq_get
  .text.rtc_clk_bbpll_set
-                0x0000000040080f1c      0x168 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                                        0x170 (size before relaxing)
+                0x0000000040080f1c      0x170 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                                        0x178 (size before relaxing)
                 0x0000000040080f1c                rtc_clk_bbpll_set
  .text.rtc_clk_xtal_freq_get
-                0x0000000040081084       0x38 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004008108c       0x38 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x3c (size before relaxing)
-                0x0000000040081084                rtc_get_xtal
-                0x0000000040081084                rtc_clk_xtal_freq_get
+                0x000000004008108c                rtc_get_xtal
+                0x000000004008108c                rtc_clk_xtal_freq_get
  .text.rtc_clk_cpu_freq_get
-                0x00000000400810bc       0x88 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400810c4       0x88 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x94 (size before relaxing)
-                0x00000000400810bc                rtc_clk_cpu_freq_get
+                0x00000000400810c4                rtc_clk_cpu_freq_get
  .text.rtc_clk_cpu_freq_value
-                0x0000000040081144       0x44 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000004008114c       0x44 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x48 (size before relaxing)
-                0x0000000040081144                rtc_clk_cpu_freq_value
+                0x000000004008114c                rtc_clk_cpu_freq_value
  .text.rtc_clk_xtal_freq_update
-                0x0000000040081188       0x12 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081190       0x12 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x16 (size before relaxing)
-                0x0000000040081188                rtc_clk_xtal_freq_update
- *fill*         0x000000004008119a        0x2 
+                0x0000000040081190                rtc_clk_xtal_freq_update
+ *fill*         0x00000000400811a2        0x2 
  .text.rtc_clk_apb_freq_update
-                0x000000004008119c       0x13 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400811a4       0x13 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                          0x16 (size before relaxing)
-                0x000000004008119c                rtc_clk_apb_freq_update
- *fill*         0x00000000400811af        0x1 
+                0x00000000400811a4                rtc_clk_apb_freq_update
+ *fill*         0x00000000400811b7        0x1 
  .text.rtc_clk_cpu_freq_set
-                0x00000000400811b0      0x1bc /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400811b8      0x1bc /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x1d0 (size before relaxing)
-                0x00000000400811b0                rtc_clk_cpu_freq_set
+                0x00000000400811b8                rtc_clk_cpu_freq_set
  .text.rtc_clk_apb_freq_get
-                0x000000004008136c       0x2a /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
-                0x000000004008136c                rtc_clk_apb_freq_get
- *fill*         0x0000000040081396        0x2 
+                0x0000000040081374       0x2a /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081374                rtc_clk_apb_freq_get
+ *fill*         0x000000004008139e        0x2 
  .text.rtc_clk_init
-                0x0000000040081398      0x182 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x00000000400813a0      0x182 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x1ba (size before relaxing)
-                0x0000000040081398                rtc_clk_init
- *fill*         0x000000004008151a        0x2 
+                0x00000000400813a0                rtc_clk_init
+ *fill*         0x0000000040081522        0x2 
  .text.rtc_clk_cal_internal
-                0x000000004008151c      0x180 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x0000000040081524      0x180 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_time.o)
  .text.rtc_clk_cal_ratio
-                0x000000004008169c       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x00000000400816a4       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_time.o)
                                          0x24 (size before relaxing)
-                0x000000004008169c                rtc_clk_cal_ratio
+                0x00000000400816a4                rtc_clk_cal_ratio
  .text.rtc_clk_wait_for_slow_cycle
-                0x00000000400816bc       0x79 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_time.o)
-                0x00000000400816bc                rtc_clk_wait_for_slow_cycle
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x0 
- *fill*         0x0000000040081735        0x3 
+                0x00000000400816c4       0x79 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_time.o)
+                0x00000000400816c4                rtc_clk_wait_for_slow_cycle
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x0 
+ *fill*         0x000000004008173d        0x3 
  .text.clk_val_is_valid
-                0x0000000040081738       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081740       0x20 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.reg_val_to_clk_val
-                0x0000000040081758        0x8 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x0000000040081760        0x8 /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .text.clk_val_to_reg_val
-                0x0000000040081760        0xe /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
- *fill*         0x000000004008176e        0x0 
+                0x0000000040081768        0xe /home/gennady/esp/esp32-exonum/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
+ *fill*         0x0000000040081776        0x0 
  *(.iram .iram.*)
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x000000004008176e                _text_end = ABSOLUTE (.)
-                0x000000004008176e                _etext = .
+                0x0000000040081776                _text_end = ABSOLUTE (.)
+                0x0000000040081776                _etext = .
 
 .dram0.bss      0x000000003fff0000       0x18
                 0x000000003fff0000                . = ALIGN (0x8)

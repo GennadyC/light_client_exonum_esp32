@@ -214,41 +214,27 @@ esp32-exonum_main.o: \
  /home/gennady/esp/esp-idf/components/esp32/include/hwcrypto/aes.h \
  /home/gennady/esp/esp-idf/components/esp32/include/rom/aes.h \
  /home/gennady/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
- /home/gennady/esp/esp32-exonum/main/src/massage.cpp \
- /home/gennady/esp/esp32-exonum/main/src/short_device_key.pb.h \
- /home/gennady/esp/esp32-exonum/main/src/pb.h \
- /home/gennady/esp/esp32-exonum/main/src/short_device_key.pb.c \
- /home/gennady/esp/esp32-exonum/main/src/test.pb.h \
- /home/gennady/esp/esp32-exonum/main/src/test.pb.c \
- /home/gennady/esp/esp32-exonum/main/src/pb_common.h \
- /home/gennady/esp/esp32-exonum/main/src/pb_common.c \
- /home/gennady/esp/esp32-exonum/main/src/pb_encode.h \
- /home/gennady/esp/esp32-exonum/main/src/pb_encode.c \
- /home/gennady/esp/esp32-exonum/main/src/pb_decode.h \
- /home/gennady/esp/esp32-exonum/main/src/pb_decode.c \
- /home/gennady/esp/esp32-exonum/main/src/massage.h \
- /home/gennady/esp/esp32-exonum/main/src/convert.h \
- /home/gennady/esp/esp32-exonum/main/src/massage.h \
- /home/gennady/esp/esp32-exonum/main/src/convert.h \
  /home/gennady/esp/esp32-exonum/components/arduino/libraries/EEPROM/EEPROM.h \
  /home/gennady/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  /home/gennady/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/gennady/esp/esp32-exonum/main/src/crypto.cpp \
- /home/gennady/esp/esp32-exonum/main/src/convert.cpp \
- /home/gennady/esp/esp32-exonum/main/src/crypto.h \
- /home/gennady/esp/esp32-exonum/main/src/sha256.cpp \
- /home/gennady/esp/esp32-exonum/main/src/sha256.h \
- /home/gennady/esp/esp-idf/components/wpa_supplicant/port/include/endian.h \
- /home/gennady/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h \
- /home/gennady/esp/esp32-exonum/main/src/tweetnacl.h \
- /home/gennady/esp/esp32-exonum/main/src/tweetnacl.c \
- /home/gennady/esp/esp32-exonum/main/src/crypto.h \
- /home/gennady/esp/esp32-exonum/main/src/short_device_key.pb.h \
- /home/gennady/esp/esp32-exonum/main/src/test.pb.h \
- /home/gennady/esp/esp32-exonum/main/src/pb_common.h \
- /home/gennady/esp/esp32-exonum/main/src/pb.h \
- /home/gennady/esp/esp32-exonum/main/src/pb_encode.h \
- /home/gennady/esp/esp32-exonum/main/src/pb_decode.h
+ /home/gennady/esp/esp32-exonum/main/inc/crypto.h \
+ /home/gennady/esp/esp32-exonum/main/inc/convert.h \
+ /home/gennady/esp/esp32-exonum/main/inc/short_device_key.pb.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb.h \
+ /home/gennady/esp/esp32-exonum/main/inc/test.pb.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb_common.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb_encode.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb_decode.h \
+ /home/gennady/esp/esp32-exonum/main/inc/transport.h \
+ /home/gennady/esp/esp32-exonum/main/inc/convert.h \
+ /home/gennady/esp/esp32-exonum/main/inc/crypto.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb_common.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb_decode.h \
+ /home/gennady/esp/esp32-exonum/main/inc/pb_encode.h \
+ /home/gennady/esp/esp32-exonum/main/inc/sha256.h \
+ /home/gennady/esp/esp32-exonum/main/inc/short_device_key.pb.h \
+ /home/gennady/esp/esp32-exonum/main/inc/tweetnacl.h
 
 /home/gennady/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -678,73 +664,45 @@ esp32-exonum_main.o: \
 
 /home/gennady/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h:
 
-/home/gennady/esp/esp32-exonum/main/src/massage.cpp:
-
-/home/gennady/esp/esp32-exonum/main/src/short_device_key.pb.h:
-
-/home/gennady/esp/esp32-exonum/main/src/pb.h:
-
-/home/gennady/esp/esp32-exonum/main/src/short_device_key.pb.c:
-
-/home/gennady/esp/esp32-exonum/main/src/test.pb.h:
-
-/home/gennady/esp/esp32-exonum/main/src/test.pb.c:
-
-/home/gennady/esp/esp32-exonum/main/src/pb_common.h:
-
-/home/gennady/esp/esp32-exonum/main/src/pb_common.c:
-
-/home/gennady/esp/esp32-exonum/main/src/pb_encode.h:
-
-/home/gennady/esp/esp32-exonum/main/src/pb_encode.c:
-
-/home/gennady/esp/esp32-exonum/main/src/pb_decode.h:
-
-/home/gennady/esp/esp32-exonum/main/src/pb_decode.c:
-
-/home/gennady/esp/esp32-exonum/main/src/massage.h:
-
-/home/gennady/esp/esp32-exonum/main/src/convert.h:
-
-/home/gennady/esp/esp32-exonum/main/src/massage.h:
-
-/home/gennady/esp/esp32-exonum/main/src/convert.h:
-
 /home/gennady/esp/esp32-exonum/components/arduino/libraries/EEPROM/EEPROM.h:
 
 /home/gennady/esp/esp-idf/components/spi_flash/include/esp_partition.h:
 
 /home/gennady/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/home/gennady/esp/esp32-exonum/main/src/crypto.cpp:
+/home/gennady/esp/esp32-exonum/main/inc/crypto.h:
 
-/home/gennady/esp/esp32-exonum/main/src/convert.cpp:
+/home/gennady/esp/esp32-exonum/main/inc/convert.h:
 
-/home/gennady/esp/esp32-exonum/main/src/crypto.h:
+/home/gennady/esp/esp32-exonum/main/inc/short_device_key.pb.h:
 
-/home/gennady/esp/esp32-exonum/main/src/sha256.cpp:
+/home/gennady/esp/esp32-exonum/main/inc/pb.h:
 
-/home/gennady/esp/esp32-exonum/main/src/sha256.h:
+/home/gennady/esp/esp32-exonum/main/inc/test.pb.h:
 
-/home/gennady/esp/esp-idf/components/wpa_supplicant/port/include/endian.h:
+/home/gennady/esp/esp32-exonum/main/inc/pb_common.h:
 
-/home/gennady/esp/esp-idf/components/wpa_supplicant/port/include/byteswap.h:
+/home/gennady/esp/esp32-exonum/main/inc/pb.h:
 
-/home/gennady/esp/esp32-exonum/main/src/tweetnacl.h:
+/home/gennady/esp/esp32-exonum/main/inc/pb_encode.h:
 
-/home/gennady/esp/esp32-exonum/main/src/tweetnacl.c:
+/home/gennady/esp/esp32-exonum/main/inc/pb_decode.h:
 
-/home/gennady/esp/esp32-exonum/main/src/crypto.h:
+/home/gennady/esp/esp32-exonum/main/inc/transport.h:
 
-/home/gennady/esp/esp32-exonum/main/src/short_device_key.pb.h:
+/home/gennady/esp/esp32-exonum/main/inc/convert.h:
 
-/home/gennady/esp/esp32-exonum/main/src/test.pb.h:
+/home/gennady/esp/esp32-exonum/main/inc/crypto.h:
 
-/home/gennady/esp/esp32-exonum/main/src/pb_common.h:
+/home/gennady/esp/esp32-exonum/main/inc/pb_common.h:
 
-/home/gennady/esp/esp32-exonum/main/src/pb.h:
+/home/gennady/esp/esp32-exonum/main/inc/pb_decode.h:
 
-/home/gennady/esp/esp32-exonum/main/src/pb_encode.h:
+/home/gennady/esp/esp32-exonum/main/inc/pb_encode.h:
 
-/home/gennady/esp/esp32-exonum/main/src/pb_decode.h:
+/home/gennady/esp/esp32-exonum/main/inc/sha256.h:
+
+/home/gennady/esp/esp32-exonum/main/inc/short_device_key.pb.h:
+
+/home/gennady/esp/esp32-exonum/main/inc/tweetnacl.h:
 /home/gennady/esp/esp32-exonum/main/./esp32-exonum_main.cpp:

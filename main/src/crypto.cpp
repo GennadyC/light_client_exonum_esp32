@@ -3,22 +3,19 @@
 #include <string>
 #include <vector>
 #include <stdio.h>
-#include "convert.h"
-#include "convert.cpp"
+#include "../inc/convert.h"
 #include <fstream>
 #include <stdexcept>
-#include "crypto.h"
-#include "sha256.cpp"
-#include "sha256.h"
-#include "tweetnacl.h"
-#include "tweetnacl.c"
-
+#include "../inc/crypto.h"
+#include "../inc//sha256.h"
+#include "../inc/tweetnacl.h"
 
 using namespace std;
 
 
-//////Подписать сообщение//////////
+/***************** Подписать сообщение ***********************/
 string sign(string secret_key, string sms) {
+	unsigned long time = millis();
 	unsigned char* smschar = (unsigned char*)malloc(sms.length()/2);
 	unsigned char* sk = (unsigned char*)malloc(secret_key.length()/2);
 	unsigned char sm[128];
@@ -29,15 +26,18 @@ string sign(string secret_key, string sms) {
 	for(int i = 0; i<64; i++){
 		signature[i]=sm[i];
 	}
-	string signa = uint8ArrayToHexadecimal(signature, 64);
+	string signa = uint8_to_hex_string(signature, 64);
 	free(smschar);
 	free(sk);
+	Serial.print("Time signature: ");
+	Serial.println(millis() - time);
 	return signa;
 }
 
-////////////Проверить подпись//////////
+/********************** Проверить подпись ****************************/
 
 int verify_sign(string signature, string message, string public_key) {
+
 	unsigned char s[64+message.length()/2];
 	unsigned char sm[64+message.length()/2];
 
@@ -54,8 +54,10 @@ int verify_sign(string signature, string message, string public_key) {
 	for(int i = 0; i < message.length()/2; i++) {
 			sm[64 + i] = sms[i];
 	}
+
 	int ver = crypto_sign_open(s,sm,64+message.length()/2,pk);
 	free(sms); free(pk); free(sign);
+
 	return ver;
 }
 
